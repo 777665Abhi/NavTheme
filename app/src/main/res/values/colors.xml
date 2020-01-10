@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGrey">#D1CDCD</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="activity_bg_black">#374046</color>
+
+    <!--Color Code 1-->
+    <color name="colorPrimary1">#008577</color>
+    <color name="colorPrimaryDark1">#00574B</color>
+    <color name="colorAccent1">#D81B60</color>
+
+
+
+    <!--Color Code 2-->
+
+    <color name="colorPrimary2">#673AB7</color>
+    <color name="colorPrimaryDark2">#512DA8</color>
+    <color name="colorAccent2">#FF9800</color>
+
+
+
+
+    <!--Color Code 3-->
+
+    <color name="colorPrimary3">#E67957</color>
+    <color name="colorPrimaryDark3">#FE4004</color>
+    <color name="colorAccent3">#FE2504</color>
+
+
+</resources>

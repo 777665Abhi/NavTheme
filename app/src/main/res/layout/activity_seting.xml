@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".setting.SettingActivity">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="8dp"
+        android:text="Select Navigation type"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/bgNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="8dp">
+
+        <RadioButton
+            android:id="@+id/rdBtBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Bottom" />
+
+        <RadioButton
+            android:id="@+id/rdBtSide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Side" />
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="8dp"
+        android:text="Theme color"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/bgTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="8dp">
+
+        <RadioButton
+            android:id="@+id/rdBtTheme1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Theme 1"
+            android:textColor="@color/colorPrimary1"
+            app:buttonTint="@color/colorPrimary1"/>
+
+        <RadioButton
+            android:id="@+id/rdBtTheme2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Theme 2"
+            app:buttonTint="@color/colorPrimary2"
+            android:textColor="@color/colorPrimary2"
+
+            />
+        <RadioButton
+            android:id="@+id/rdBtTheme3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Theme 3"
+            android:textColor="@color/colorPrimary3"
+            app:buttonTint="@color/colorPrimary3"
+            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btApplySetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply changes"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"/>
+</LinearLayout>

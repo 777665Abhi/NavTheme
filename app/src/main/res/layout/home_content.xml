@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--    android:id="@+id/toolbar"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="?attr/actionBarSize"-->
+<!--    android:background="?attr/colorPrimary"-->
+<!--    app:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"-->
+<!--    app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light"-->
+<!--    />-->
+    <include layout="@layout/custom_toolbar"/>
+    <include
+        layout="@layout/content_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="true"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="0dp"
+        android:background="@color/colorGrey"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <include
+            android:id="@+id/nav_bottom"
+            layout="@layout/nav_bottom_sheet"/>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <!--        android:background="@color/colorPrimary"-->
